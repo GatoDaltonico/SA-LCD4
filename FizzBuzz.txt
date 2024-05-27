@@ -1,0 +1,38 @@
+//Verónica Chávez, me evaluó Verónica Herrera con 5/5, todo corre bien y se hicieron las correcciones pertinentes
+package codigo5;
+
+package fizzbuzz;
+
+// Clase que contiene la lógica para imprimir los números y los reemplazos Fizz, Buzz y FizzBuzz
+public class FizzBuzz {
+    
+    // Método para imprimir los números del 1 al 100 con las reglas de FizzBuzz
+    public void imprimir() {
+        for (int i = 1; i <= 100; i++) {
+            if (i % 3 == 0 && i % 5 == 0) {
+                System.out.println("FizzBuzz"); // Imprime FizzBuzz si el número es múltiplo de 3 y 5
+            } else if (i % 3 == 0) {
+                System.out.println("Fizz"); // Imprime Fizz si el número es múltiplo de 3
+            } else if (i % 5 == 0) {
+                System.out.println("Buzz"); // Imprime Buzz si el número es múltiplo de 5
+            } else {
+                System.out.println(i); // Imprime el número si no es múltiplo de 3 ni de 5
+            }
+        }
+    }
+}
+
+Clase Main:
+
+package fizzbuzz;
+
+// Clase principal que contiene el método main para ejecutar el programa
+public class Main {
+    public static void main(String[] args) {
+        // Creación de un objeto de la clase FizzBuzz
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        
+        // Llamada al método imprimir para mostrar el resultado
+        fizzBuzz.imprimir();
+    }
+}
